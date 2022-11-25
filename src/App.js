@@ -17,7 +17,7 @@ function App() {
           <Header />
           <div className="container">
             <Routes>
-              <Route path="/" element={<Home/>}/>
+              <Route path="/reef-graph-ql-ui/" element={<Home/>}/>
               <Route path="*"  element={<NotFound/> }/>
 
             </Routes>
