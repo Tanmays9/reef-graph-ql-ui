@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/reef-graph-ql-ui/static/css/main.c93edd88.css",
-    "main.js": "/reef-graph-ql-ui/static/js/main.976a18ca.js",
+    "main.js": "/reef-graph-ql-ui/static/js/main.381dc3c1.js",
     "static/js/787.51d6a6e0.chunk.js": "/reef-graph-ql-ui/static/js/787.51d6a6e0.chunk.js",
     "index.html": "/reef-graph-ql-ui/index.html",
     "main.c93edd88.css.map": "/reef-graph-ql-ui/static/css/main.c93edd88.css.map",
-    "main.976a18ca.js.map": "/reef-graph-ql-ui/static/js/main.976a18ca.js.map",
+    "main.381dc3c1.js.map": "/reef-graph-ql-ui/static/js/main.381dc3c1.js.map",
     "787.51d6a6e0.chunk.js.map": "/reef-graph-ql-ui/static/js/787.51d6a6e0.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c93edd88.css",
-    "static/js/main.976a18ca.js"
+    "static/js/main.381dc3c1.js"
   ]
 }
