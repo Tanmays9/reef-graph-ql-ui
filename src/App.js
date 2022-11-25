@@ -1,15 +1,29 @@
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Header from "./components/Header";
+import { ApolloProvider, ApolloClient, InMemoryCache } from "@apollo/client";
+import Home from "./pages/Home";
+import NotFound from "./pages/NotFound";
 
-
-
+const client = new ApolloClient({
+  uri: "https://api.spacex.land/graphql/",
+  cache: new InMemoryCache(),
+});
 
 function App() {
   return (
     <>
-      <Header/>
-      <div className="container">
-        <h1>Hello World</h1>
-      </div>
+      <ApolloProvider client={client}>
+        <Router>
+          <Header />
+          <div className="container">
+            <Routes>
+              <Route path="/" element={<Home/>}/>
+              <Route path="*"  element={<NotFound/> }/>
+
+            </Routes>
+          </div>
+        </Router>
+      </ApolloProvider>
     </>
   );
 }
