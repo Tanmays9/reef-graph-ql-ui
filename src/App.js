@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import { ApolloProvider, ApolloClient, InMemoryCache } from "@apollo/client";
 import Home from "./pages/Home";
 import NotFound from "./pages/NotFound";
+import { IDE } from "./pages/IDE";
 
 const client = new ApolloClient({
   uri: "https://api.spacex.land/graphql/",
@@ -19,7 +20,7 @@ function App() {
             <Routes>
               <Route path="/reef-graph-ql-ui/" element={<Home/>}/>
               <Route path="*"  element={<NotFound/> }/>
-
+              <Route path="/reef-graph-ql-ui/ide" element={<IDE/>}/>
             </Routes>
           </div>
         </Router>
